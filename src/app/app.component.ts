@@ -24,7 +24,7 @@ export class AppComponent {
   @ViewChild('galleryContainer', { static: true })
   galleryContainerId?: ElementRef;
 
-  title = 'cyprus-codes';
+  title = 'nasa-api';
 
   searchTerm: string = '';
   images: boolean = false;

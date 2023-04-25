@@ -21,7 +21,7 @@ describe('AssetsDialog', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('.content span')?.textContent).toContain(
-      'cyprus-codes app is running!'
+      'nasa-api app is running!'
     );
   });
 });

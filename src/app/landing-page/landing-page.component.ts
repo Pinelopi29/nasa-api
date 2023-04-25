@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./landing-page.component.scss'],
 })
 export class LandingPageComponent implements OnInit {
-  title = 'cyprus-codes';
+  title = 'nasa-api';
 
   searchTerm: string = '';
   images: boolean = false;
