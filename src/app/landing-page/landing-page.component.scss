@@ -1,0 +1,55 @@
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+$primary-color: #4a90e2;
+
+header {
+  background-color: $primary-color;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+  display: inline-block;
+}
+
+main {
+  margin: 0 auto;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.checkboxes {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  .gallery-item {
+    width: 25%;
+    height: 300px;
+    padding: 10px;
+    overflow: hidden;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+footer {
+  background-color: #f5f5f5;
+  color: #999;
+  padding: 20px;
+  text-align: center;
+}

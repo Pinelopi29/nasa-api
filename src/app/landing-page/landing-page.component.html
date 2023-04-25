@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NASA Api</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to NASA Api</h1>
+    </header>
+    <main>
+      <mat-form-field appearance="fill" floatLabel="auto">
+        <input matInput [(ngModel)]="searchTerm" placeholder="Search" />
+        <button (click)="onSearch(searchTerm)" mat-icon-button matSuffix>
+          <mat-icon>search</mat-icon>
+        </button>
+      </mat-form-field>
+
+      <section class="checkboxes">
+        <mat-checkbox
+          (change)="onCheckboxChagen($event, 'images')"
+          [(ngModel)]="images"
+          >Images</mat-checkbox
+        >
+        <mat-checkbox
+          (change)="onCheckboxChagen($event, 'videos')"
+          [(ngModel)]="videos"
+          >Videos</mat-checkbox
+        >
+      </section>
+    </main>
+    <div class="gallery">
+      <div
+        #galleryContainer
+        class="gallery-container"
+        id="gallery-container"
+      ></div>
+    </div>
+    <footer>
+      <p>Copyright © 2023</p>
+    </footer>
+  </body>
+</html>
